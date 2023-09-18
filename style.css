@@ -1,0 +1,149 @@
+:root {
+    --primary-color: rgb(0,204,102);
+    --color-white: #fff;
+    --color-black: rgb(0,0,0);
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* utilities */
+.container {
+    padding: 0 5%;
+
+}
+
+a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.main-heading{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.heading-res {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* header */
+header {
+    height: 10vh;
+    display: flex;
+}
+
+.main-nav {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li a {
+    text-transform: capitalize;
+    padding-right: 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+.hero {
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.main-img {
+    flex: 0 0 50%;
+}
+
+.main-img img {
+    width: 80%;
+    height: 70%;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+
+/* resources */
+.description {
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+.card .icon img {
+    width: 10rem;
+    height: auto;
+}
+
+.mail {
+    color: var(--primary-color);
+}
+
+.box{
+	width: 400px;
+	height: 400px;
+	background: rgba(0,0,0,0);
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	color: black;
+}
+
+.box h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.box p{
+	margin-top: 10px;
+}
+.box span{
+	font-family: "Brush Script MT";
+	font-size: 22px;
+}
